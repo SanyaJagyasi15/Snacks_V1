@@ -1,0 +1,205 @@
+.view-receipt-container {
+  background-color: #f0f0f0;
+  min-height: calc(100vh - 60px);
+  padding: 2rem;
+}
+
+.view-receipt-content {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.view-receipt-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.view-receipt-title {
+  font-size: 2rem;
+  color: #008CBA;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+}
+
+.button-group button {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-group button:hover {
+  transform: scale(1.05);
+}
+
+.button-group button:active {
+  transform: scale(0.95);
+}
+
+.button-group button.add {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.button-group button.add:hover {
+  background-color: #45a049;
+}
+
+.button-group button.edit {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.button-group button.edit:hover {
+  background-color: #e0e0e0;
+}
+
+.button-group button.delete {
+  background-color: #f44336;
+  color: white;
+}
+
+.button-group button.delete:hover {
+  background-color: #da190b;
+}
+
+.filters {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-group label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.filter-group input,
+.filter-group select {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  padding: 8px;
+  text-align: left;
+  vertical-align: top;
+}
+
+table th:nth-child(2),
+table td:nth-child(2) {
+  white-space: nowrap;
+  width: 100px;
+}
+
+table th:nth-child(3),
+table td:nth-child(3) {
+  max-width: 300px;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+table td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 150px;
+}
+
+table, th, td {
+  border: none;
+}
+
+thead {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.pagination button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #008CBA;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+  background-color: #005f7a;
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination span {
+  font-weight: bold;
+  color: #333;
+}
+
+tfoot td {
+  border-top: 2px solid #ddd;
+  padding: 10px;
+}
+
+.sort-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.8rem;
+  margin-left: 0.25rem;
+  padding: 0;
+  color: #666;
+  vertical-align: middle;
+}
+
+.sort-button:hover {
+  color: #008CBA;
+}
+
+th {
+  position: relative;
+}
